@@ -1,0 +1,49 @@
+﻿<!-- Modal -->
+<div class="modal fade" data-backdrop="static" id="popupBeneficiarios" tabindex="-1" role="dialog" aria-labelledby="popupBeneficiarios" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document" style="width: 700px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="popupBeneficiarios">Beneficiários</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="CPFBeneficiario">CPF:</label>
+                            <input required="required" type="text" class="form-control" id="CPFBeneficiario" name="CPFBeneficiario" placeholder="Ex.: 010.011.111-00" maxlength="14" ">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="NomeBeneficiario">Nome:</label>
+                            <input required="required" type="text" class="form-control" id="NomeBeneficiario" name="NomeBeneficiario" placeholder="Ex.: João" maxlength="50">
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <button id="adicionarBeneficiario" class="btn btn-success adicionarBeneficiario" type="button">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+                <table id="gridBeneficiarios" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th style="display:none">Id</th>
+                            <th style="width: 150px">CPF</th>
+                            <th style="width: 350px">Nome</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="linhasGridBeneficiarios">
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
